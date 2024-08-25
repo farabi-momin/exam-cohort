@@ -1,0 +1,19 @@
+make virtual environment
+cmd:
+py -m venv env
+"then install django in env\Scripts"
+pip install django
+
+make project
+django-admin startproject projectname
+
+make app in project
+python manage.py startapp appname
+
+
+
+***allauth helps***{
+https://stackoverflow.com/questions/8477530/how-to-access-user-names-and-profiles-with-django-allauth
+
+
+}

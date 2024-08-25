@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+
+{%block head %} {%endblock%}
+
+{%block navbar %} {% endblock %}
+
+{%block navsmall %} {% endblock %}
+
+{% block header%}
+
+{% endblock %}
+
+{% block firstgrid%}
+<a href = "/cohort/cohortIndex/{{Info.CohortID}}/examIndex/{{exam.examID}}/createquestion">Create Question</a> <br> <hr>
+{%endblock%}
+{%block secondgrid%}
+    <table>
+        <tr> 
+            <th> Question </th>
+            <th> Option 1 </th>
+            <th> Option 2 </th>
+            <th> Option 3 </th>
+            <th> Option 4 </th>
+        </tr>
+    {% for q in questions%}
+        <tr>
+            <td> {{q.question}} </td>
+            <td> {{q.op1}} </td>
+            <td> {{q.op2}} </td>
+            <td> {{q.op3}} </td>
+            <td> {{q.op4}} </td>
+        </tr>
+    {%endfor%}
+    </table>
+{%endblock%}      
+
+{%block footer%}
+
+{%endblock%}
